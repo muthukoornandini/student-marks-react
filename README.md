@@ -1,16 +1,70 @@
-# React + Vite
+# Student Marks – React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that demonstrates how to use **Props and State** to display and dynamically update student marks.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[View Live Demo](https://muthukoornandini.github.io/student-marks-react/)**
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**[View Source Code](https://github.com/muthukoornandini/student-marks-react)**
 
-## Expanding the ESLint configuration
+## 🎯 Objective
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To create a reusable Student component using:
+
+* **Props** to receive the student's name and subject
+* **State** to store and update the student's marks
+* React event handling to increase and decrease marks
+
+## 🛠️ Technologies Used
+
+* React
+* JavaScript
+* Vite
+* HTML
+* CSS
+* Git & GitHub
+* GitHub Pages
+
+## ✨ Features
+
+* Displays student name
+* Displays subject name
+* Displays current marks
+* Increase Marks button
+* Decrease Marks button
+* Marks update dynamically using React State
+* Student information is passed using Props
+
+## 📌 Student Details
+
+| Property      | Value |
+| ------------- | ----- |
+| Student Name  | Rahul |
+| Subject       | Java  |
+| Initial Marks | 50    |
+
+## ⚛️ React Concepts Demonstrated
+
+### Props
+
+Props are used to pass student information from the parent component to the Student component.
+
+```jsx
+<Student
+  name="Rahul"
+  subject="Java"
+/>
+```
+
+The Student component receives these values through props:
+
+```jsx
+function Student(props) {
+  return (
+    <>
+      <p>Student Name: {props.name}</p>
+      <p>Subject:
+```
